@@ -1,7 +1,7 @@
 # apturl==0.5.2
 asgiref==3.4.1
 blinker==1.4
-catfish==1.4.13
+# catfish==1.4.13
 certifi==2021.5.30
 cffi==1.14.6
 chardet==3.0.4
