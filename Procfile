@@ -1,0 +1,1 @@
+web: gunicorn spa_cv.wsgi --log-file -

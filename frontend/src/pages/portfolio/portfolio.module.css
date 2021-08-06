@@ -1,0 +1,19 @@
+.portfolio_title {
+    text-align: center;
+    color: #df0000;
+    background: linear-gradient(45deg, #ffffff 33%, #df0000 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Play', Tahoma, sans-serif;
+    margin-top: 25px;
+}
+.sites_wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    position: relative;
+}

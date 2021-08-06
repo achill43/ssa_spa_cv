@@ -1,0 +1,100 @@
+.site_item {
+    width: 550px;
+}
+.face {
+    width: 550px;
+    height: 376px;
+    overflow: hidden;
+    transition: 1s;
+}
+.face h3 {
+    text-align: center;
+    color: #e00101;
+}
+.face p{
+    text-align: justify;
+}
+.face a {
+    color: #e00101;
+}
+.face .myBtn{
+    color: white;
+    background: #df0000;
+    text-align: center;
+    padding: 20px 30px;
+    display: block;
+    margin: 40px auto;
+    max-width: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    position: relative;
+}
+.face .myBtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -13px;
+    left: -13px;
+    border: 3px solid #333;
+    opacity: 0.7;
+    z-index: -1;
+}
+.face .myBtn::after {
+    content: 'Перейти';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 13px;
+    left: 13px;
+    background: #df0000;
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.face .myBtn:hover{
+    text-decoration: none;
+    background: #333;
+}
+.face img {
+    width: 100%;
+}
+.face1{
+    background: #333;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(188px);
+}
+.face1 .content{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.face2{
+    background: white;
+    color: #2b2b2b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-188px);
+}
+.site_item:hover .face2{
+    transform: translateY(0);
+}
+.site_item:hover .face1{
+    transform: translateY(0);
+    background: #e00101;
+}

@@ -1,0 +1,13 @@
+.venv3/
+
+# React modules
+frontend/node_modules/
+
+__pycache__/
+*.pyc
+
+# Text backup files
+*.bak
+
+#Database
+*.sqlite3

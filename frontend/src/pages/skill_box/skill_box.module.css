@@ -1,0 +1,202 @@
+.skill_box_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin: -15px;
+}
+.flex_column {
+    width: 50%;
+    box-sizing: border-box;
+    min-width: 320px;
+}
+.resume_block {
+    background-color: #fff;
+    color: #000;
+}
+.avatar_wrap {
+    display: flex;
+    justify-content: center;
+}
+.avatar {
+    max-width: 400px;
+}
+.resume_block a {
+    color: #df0000;
+}
+.main_title {
+    color: #df0000;
+    background: linear-gradient(45deg, #000000 33%, #e00101 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+}
+h1.main_title {
+    font-size: 3em;
+}
+h3.main_title {
+    font-size: 2em;
+}
+.skill_block {
+    background-color: #222;
+    color: #fff;
+}
+.skill_block p {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.resume_block p {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.resume_title {
+    background: #222;
+    color: #df0000;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 80%);
+    text-transform: uppercase;
+}
+.skill_title {
+    margin: 30px 0px;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: #df0000;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 80%);
+}
+.additional_skills {
+    padding-left: 95px;
+}
+.additional_skills .skill_wrap {
+    margin-top: 20px;
+    font-size: 1.7em;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+.additional_skills .skill_wrap .skill_item {
+    width: 100%;
+    min-height: 45px;
+    display: block;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.additional_skills .skill_wrap .icon_block {
+    color:#df0000;
+    margin-right: 15px;
+    font-size: 40px;
+}
+.additional_skills .skill_wrap .icon_block img {
+    height: 60px;
+    transform: translateY(-10px);
+}
+.additional_skills .skill_wrap .icon_postgres img {
+    height: 45px !important;
+    transform: translateY(-5px);
+}
+.additional_skills .skill_wrap .skill_item .pescent_block {
+    width: 75%;
+    float: left;
+    margin-top: 15px;
+    background: #e00101;
+    height: 5px;
+    position: relative;
+}
+.pescent {
+    position: relative;
+    height: 5px;
+    background: white;
+    color: white;
+}
+.pescent span {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    font-size: 25px;
+}
+.main_skill_wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px 0px 70px
+}
+.single_skill {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+.single_skill svg {
+    justify-content: start;
+    align-items: flex-start;
+    transform: translate(-40px, -10px);
+}
+.single_skill .percent {
+    position: absolute;
+    bottom: 38px;
+    right: -28px;
+    color: #ccc;
+  }
+.progress_ring {
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+.main_skill_icon {
+    font-size: 2.3em;
+    position: absolute;
+    bottom: -10px;
+    right: -3px;
+}
+.circle {
+    stroke: #f17a0a;
+    stroke-width: 8;
+    stroke-linecap: round;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+    transition: 1s all ease;
+}
+.resume_link {
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    color: #df0000;
+    background-color: #222;
+    padding: 15px;
+    box-shadow: -15px 10px 15px rgb(0 0 0 / 55%);
+    margin: 15px auto 15px;
+}
+
+@media (max-width: 780px) {
+    .resume_block, .skill_block {
+        width: 100%;
+    }
+    h1.main_title {
+        font-size: 1.6em;
+    }
+    h3.main_title {
+        font-size: 1em;
+    }
+}
+@media (max-width: 520px) {
+    .main_skill_wrap {
+        flex-wrap: wrap;
+    }
+    .additional_skills {
+        padding-left: 15px;
+        padding: 15px;
+    }
+    .additional_skills .skill_wrap  {
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+    }
+}
